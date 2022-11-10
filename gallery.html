@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom - Gallery</title>
+
+    <link rel="icon" href="./images/favicon.png">
+
+    <!--PREFETCH STARTS HERE-->
+    <link rel="dns-prefetch" crossorigin="anonymous" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" crossorigin="anonymous" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <!--PREFETCH ENDS HERE -->
+
+    <!-- PRELOADS  -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@300;400;500;700&family=Noto+Serif+Display:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" />
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="preload" as="script" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js">
+    <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js">
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- PRELOADS  -->
+
+    <!--START FONTS STARTS HERE  -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@300;400;500;700&family=Noto+Serif+Display:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" />
+    <!--END FONTS ENDS HERE  -->
+
+
+    <!--START BOOTSTRAP CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--END BOOTSTRAP CSS  -->
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Link Swiper's CSS -->
+
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- MY STYLE -->
+
+</head>
+<body class="innerPage">
+
+
+    <!-- START OF HEADER  -->
+    <header class="col-11 col-lg-10 col-xxl-9 mx-auto fixed-top">
+        <div class="topHeader d-flex align-items-center justify-content-end px-3">
+            <div class="contact-header">
+                <ul class="d-flex list-unstyled">
+                  <li><a href="mailto:hello@theblossom.eu" target="_blank"><img src="./images/email.png" alt="">hello@theblossom.eu</a></li>
+                  <li><a href="tel:+306975400009" target="_blank"><img src="./images/telephone.svg" alt="">+306975400009</a></li>
+                </ul>
+            </div>
+            <div class="languagesDrop dropdown">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  EN
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">
+                  GR
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="bottomHeader bgGreenDE ps-2 ps-md-0">
+          <div class="row align-items-center">
+            <div class="col-5 col-xl-3 text-center text-xl-end">
+              <div class="header-logo">
+                <a href="index.html">
+                  <img src="./images/logo-horizontal.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-2 col-xl-6 text-center">
+              <div class="header-nav d-none d-xl-block">
+                <ul class="position-relative list-unstyled menuNav d-flex align-items-center justify-content-center">
+                    <li class="parentItem">
+                        <label for="btn-1" class="d-none">Residences</label>
+                        <a href="#">Residences</a>
+                        <input type="checkbox" id="btn-1">
+                        <ul class="childMenu">
+                            <li>
+                                <a href="#">The Blossom Urban Residence, Heraklion</a>
+                            </li>
+                            <li>
+                                <a href="#">The Venice Harbor Residence I, Heraklion</a>
+                            </li>
+                            <li>
+                                <a href="#">The Venice Harbor Residence II, Heraklion</a>
+                            </li>
+                            <li>
+                                <a href="#">The Venice Harbor Residence III, Heraklion</a>
+                            </li>
+                            <li>
+                              <a href="#">The Jacuzzi Residence, Heraklion</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#">Experiences</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-5 col-xl-3 d-flex justify-content-end align-items-center">
+                <div class="menu-burger me-2 me-sm-4" id="menuOpen">
+                    <span></span>
+                </div>
+                <div class="headerBookBtn">
+                    <a href="#">BOOK NOW</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- END OF HEADER  -->
+  
+    <!-- START OF MOBILE MENU  -->
+    <div id="menu">
+      <div class="col-12 col-lg-9 mx-auto px-3 px-md-5 py-5 menuContent">
+        <div class="menu-header d-flex justify-content-between align-items-center">
+          <a href="index.html" class="menu-logo">
+            <img src="./images/logo-horizontal-white.png" alt="">
+          </a>
+          <div class="menu-burger" id="menuClose">
+            <span></span>
+          </div>
+        </div>
+        <nav role="navigation" class="mt-5 mb-4 mobile-nav">
+          <ul class="position-relative list-unstyled menuNav">
+              <li class="parentItem">
+                  <label for="btn-1" class="d-none">THE RESIDENCES</label>
+                  <a href="#">
+                    THE RESIDENCES
+                  </a>
+                  <input type="checkbox" id="btn-1">
+                  <ul class="childMenu">
+                      <li>
+                          <a href="#">The Blossom Urban Residence, Heraklion</a>
+                      </li>
+                      <li>
+                          <a href="#">The Venice Harbor Residence I, Heraklion</a>
+                      </li>
+                      <li>
+                          <a href="#">The Venice Harbor Residence II, Heraklion</a>
+                      </li>
+                      <li>
+                          <a href="#">The Venice Harbor Residence III, Heraklion</a>
+                      </li>
+                      <li>
+                        <a href="#">The Jacuzzi Residence, Heraklion</a>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="#">PHILOSOPHY</a></li>
+              <li><a href="#">EXPERIENCES</a></li>
+              <li><a href="#">EXCLUSIVE DEALS</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="menu-footer row align-items-center">
+          <div class="menu-social col-12 col-lg-4 text-lg-start mb-4 mb-lg-0">
+            <ul class="list-unstyled d-inline-flex flex-wrap">
+              <li><a href="#"><img src="./images/instagram-black.png" alt=""></a></li>
+              <li><a href="#"><img src="./images/tripadvisor-black.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="email col-12 col-lg-4 mb-4 mb-lg-0">
+            <a href="#">hello@theblossom.eu</a>
+          </div>
+          <div class="adress col-12 col-lg-4 text-lg-end">
+            <p>The Blossom Residences<br>25, Ariadnis st. 71202<br>Iraklio, Crete - Greece<br>T +306975400009</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF MOBILE MENU  -->
+
+
+    <div class="col-11 col-lg-10 col-xxl-9 mx-auto galleriesPage">
+        <div class="pageTitle bgGreenED">
+            <h1 class="text-center">
+                Gallery
+            </h1>
+        </div>
+        <div class="pt-5 px-3 bgGreenF7 galleryFilters">
+            <div id="galleryBtnContainer" class="d-flex flex-wrap justify-content-center">
+                <label for="all">
+                    <input type="radio" id="all" name="galleryFilter" class="filter-link active" onclick="filterSelection('all')" checked>View all
+                </label>
+                <label for="residence1">
+                    <input type="radio" id="residence1" name="galleryFilter" class="filter-link" onclick="filterSelection('residence1')">Residence 1
+                </label>
+                <label for="residence2">
+                    <input type="radio" id="residence2" name="galleryFilter" class="filter-link" onclick="filterSelection('residence2')">Residence 2
+                </label>
+                <label for="residence3">
+                    <input type="radio" id="residence3" name="galleryFilter" class="filter-link" onclick="filterSelection('residence3')">Residence 3
+                </label>
+                <label for="residence4">
+                    <input type="radio" id="residence4" name="galleryFilter" class="filter-link" onclick="filterSelection('residence4')">Residence 4
+                </label>
+            </div>
+        </div>
+        <div class="galleries">
+            <div class="residence1 photoColumn paddingsX bgGreenF7">
+                <div class="gallery">
+                    <div class="simpleBlock">
+                        <h2 class="headingBorder mb-5">
+                            The Original Blossom residence 1
+                        </h2>
+                    </div>
+                    <div class="row g-2 g-lg-4">
+                        <div class="col-4">
+                            <a href="./images/gallery5-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery5.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery6-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery6.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery7-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery7.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery8-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery8.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div> 
+                        <div class="col-4">                
+                            <a href="./images/gallery1-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery1.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery2-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery2.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery5-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery5.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div> 
+                        <div class="col-4">                
+                            <a href="./images/gallery8-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery8.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery5-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery5.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery6-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery6.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery7-big.jpg"  data-fslightbox="gallery">
+                                <picture>
+                                    <img src="./images/gallery7.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="residence2 photoColumn paddingsX bgGreenF7">
+                <div class="gallery">
+                    <div class="simpleBlock">
+                        <h2 class="headingBorder mb-5">
+                            The Blossom Collection I  - Jacuzzi & Sea View 2
+                        </h2>
+                    </div>
+                    <div class="row g-2 g-lg-4">
+                        <div class="col-4">
+                            <a href="./images/gallery5-big.jpg"  data-fslightbox="gallery2">
+                                <picture>
+                                    <img src="./images/gallery5.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery6-big.jpg"  data-fslightbox="gallery2">
+                                <picture>
+                                    <img src="./images/gallery6.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div> 
+                        <div class="col-4">                
+                            <a href="./images/gallery1-big.jpg"  data-fslightbox="gallery2">
+                                <picture>
+                                    <img src="./images/gallery1.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div> 
+                        <div class="col-4">                
+                            <a href="./images/gallery2-big.jpg"  data-fslightbox="gallery2">
+                                <picture>
+                                    <img src="./images/gallery2.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="residence3 photoColumn paddingsX bgGreenF7">
+                <div class="gallery">
+                    <div class="simpleBlock">
+                        <h2 class="headingBorder mb-5">
+                            The Original Blossom residence 3
+                        </h2>
+                    </div>
+                    <div class="row g-2 g-lg-4">
+                        <div class="col-4">
+                            <a href="./images/gallery5-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery5.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery6-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery6.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery7-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery7.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery8-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery8.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div> 
+                        <div class="col-4">                
+                            <a href=./images/gallery1-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery1.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery2-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery2.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery5-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery5.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div> 
+                        <div class="col-4">                
+                            <a href="./images/gallery8-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery8.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery5-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery5.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery6-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery6.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery7-big.jpg"  data-fslightbox="gallery3">
+                                <picture>
+                                    <img src="./images/gallery7.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="residence4 photoColumn paddingsX bgGreenF7">
+                <div class="gallery">
+                    <div class="simpleBlock">
+                        <h2 class="headingBorder mb-5">
+                            The Blossom Collection I  - Jacuzzi & Sea View 4
+                        </h2>
+                    </div>
+                    <div class="row g-2 g-lg-4">
+                        <div class="col-4">
+                            <a href="./images/gallery5-big.jpg"  data-fslightbox="gallery4">
+                                <picture>
+                                    <img src="./images/gallery5.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                            <a href="./images/gallery6-big.jpg"  data-fslightbox="gallery4">
+                                <picture>
+                                    <img src="./images/gallery6.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div> 
+                        <div class="col-4">                
+                            <a href="./images/gallery1-big.jpg"  data-fslightbox="gallery4">
+                                <picture>
+                                    <img src="./images/gallery1.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div> 
+                        <div class="col-4">                
+                            <a href="./images/gallery2-big.jpg"  data-fslightbox="gallery4">
+                                <picture>
+                                    <img src="./images/gallery2.jpg" class="img-fluid">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- START OF INSTAGRAM  -->
+    <div class="bgBrownAD instagram mt-4">
+      <div class="paddings overflow-hidden">
+        <div class="col-10 col-xl-9 mx-auto text-center">
+          <a href="#" class="instaTitle d-inline-flex align-items-center justify-content-center text-center" target="_blank">
+            <span>@theblossomliving</span>
+            <img src="./images/instagramBlack.png" alt="">
+          </a>
+          <div class="row g-4 mt-5">
+            <div class="col-6 col-md-3">
+              <div class="insta-box">
+                <picture>
+                  <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                  <source srcset="#" media="(min-width: 992px)"> -->
+                  <img src="./images/Blossom-Residence-Ariadnis-25-1359.jpg" alt="" class="img-fluid upImg">
+                </picture>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="insta-box">
+                <picture>
+                  <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                  <source srcset="#" media="(min-width: 992px)"> -->
+                  <img src="./images/Blossom-Residence-Ariadnis-25-1367.jpg" alt="" class="img-fluid upImg">
+                </picture>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="insta-box">
+                <picture>
+                  <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                  <source srcset="#" media="(min-width: 992px)"> -->
+                  <img src="./images/Blossom-Residence-Ariadnis-25-1447.jpg" alt="" class="img-fluid upImg">
+                </picture>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="insta-box">
+                <picture>
+                  <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                  <source srcset="#" media="(min-width: 992px)"> -->
+                  <img src="./images/Blossom-residences-ioanni-marineli-venetian-fortress-view-0120.jpg" alt="" class="img-fluid upImg">
+                </picture>
+              </div>
+            </div>
+          </div>
+         
+      </div>
+     </div>
+    </div>
+    <!-- END OF INSTAGRAM  -->
+
+    <!-- START OF FOOTER  -->
+    <footer>
+      <!-- REVIEWS FOOTER  -->
+      <div class="reviews col-10 col-xl-9 mx-auto text-center bgGreenED p-3">
+          <ul class="list-unstyled d-flex flex-wrap flex-lg-nowrap justify-content-center align-items-center">
+            <li class="col-6 col-lg-3"><a href="#"><img src="./images/booking.svg" alt=""><span>9,8</span> / 10</a></li>
+            <li class="col-6 col-lg-3"><a href="#"><img src="./images/airbnb.svg" alt=""><span>4,8</span> / 5</a></li>
+            <li class="col-6 col-lg-3"><a href="#"><img src="./images/vrbo-logo.png" alt=""><span>9,6</span> / 10</a></li>
+            <li class="col-6 col-lg-3"><a href="#"><img src="./images/google.svg" alt=""><span>4,6</span> / 5</a></li>
+          </ul>
+      </div>
+      <!-- REVIEWS FOOTER  -->
+
+      <!-- MAIN FOOTER  -->
+      <div class="col-9 col-sm-8 mx-auto footer-row">
+        <a href="#" class="footer-logo">
+          <img src="./images/logo-vertical.svg" alt="">
+        </a>
+        <div class="row mt-5">
+          <div class="col-xxl-5 leftFooter mb-5 mb-xxl-0">
+            <a href="mailto:hello@theblossom.eu" class="footer-mail h2">hello@theblossom.eu</a>
+            <p class="footer-details">The Blossom Residence<br>25, Ariadnis st. 71202<br>Iraklio, Crete - Greece<br>T +306975400009</p>
+            <ul class="list-unstyled d-inline-flex flex-wrap">
+              <li><a href="#"><img src="./images/instagram-white.png" alt=""></a></li>
+              <li><a href="#"><img src="./images/tripadvisor-white.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="col-xxl-6 offset-xxl-1 rightFooter">
+            <h2 class="h1">Get on the list</h2>
+            <form class="row gy-3 gy-sm-0gx-3 newsletterForm mt-5 align-items-baseline">
+              <div class="col-sm-8 col-xxl-8">
+                  <label for="email" class="visually-hidden">Email</label>
+                  <input type="text" class="form-control" placeholder="Email address" aria-label="email" id="email">
+              </div>
+              <div class="col-sm-4 col-xxl-4">
+                  <button type="submit" class="singBtn">Sign Up</button>
+              </div>
+            </form>
+            <p class="note mt-5">Be the first to hear our news, special offers and more</p>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN FOOTER  -->
+
+    </footer>
+    <!-- END OF FOOTER  -->
+
+    <!--START BOTTOM MENU  -->
+    <div class="bottomMenu bgGreenED">
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
+        <li><a href="#">AMBASSADOR’S FORM</a></li>
+        <li><a href="#">EXPLORE</a></li>
+        <li><a href="#">DISCLAIMER</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+      </ul>
+    </div>
+    <!--END BOTTOM MENU  -->
+
+    <!-- START COPYRIGHT  -->
+    <div class="copyright d-flex justify-content-center align-items-center flex-wrap p-4">
+      © 2022 TheBlossomLiving. All rights reserved
+    </div>
+    <!-- END COPYRIGHT  -->
+
+    <div class="toTop clearfix"> <a class="scrollup" href="#" title="scroll to top"></a></div>
+
+    <!--START BOOTSTRAP JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--END BOOTSTRAP JS  -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+
+    <!-- Lazyload JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Lazyload JS  -->
+    
+    <!-- START OF FSLIGHTBOX ONLY IN GALLERY PAGE -->
+    <script integrity="sha512-EqNNJuepkw5P9vxCml8eBk7C4Ld+4kAnvzOD/jG21rkxWPILGoQa5EvD62UieiJF0u3xoQrcVnce4i83VnYj/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+    <!-- END OF FSLIGHTBOX ONLY IN GALLERY PAGE -->
+
+    <!--START MY SCRIPTS  -->
+    <script src="./scripts/scripts.js"></script>
+    <!--END MY SCRIPTS  -->
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("photoColumn");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            galleryRemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) galleryAddClass(x[i], "show");
+          }
+        }
+        
+        function galleryAddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function galleryRemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("galleryBtnContainer");
+        var btns = btnContainer.getElementsByClassName("filterButton");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+    </script>
+    <!-- END FILTERS GALLERY SCRIPT -->
+</body>
+</html>

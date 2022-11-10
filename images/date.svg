@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="26.5" viewBox="0 0 32 26.5">
+  <g id="Group_878" data-name="Group 878" transform="translate(-1689.167 0.5)">
+    <rect id="Rectangle_408" data-name="Rectangle 408" width="31" height="23" transform="translate(1689.667 2.5)" fill="none" stroke="#000" stroke-width="1"/>
+    <g id="Group_872" data-name="Group 872" transform="translate(1694.667)">
+      <path id="Path_700" data-name="Path 700" d="M1713.667,862.5v-5h2v5" transform="translate(-1694.667 -857.5)" fill="none" stroke="#000" stroke-width="1"/>
+      <path id="Path_701" data-name="Path 701" d="M1696.667,862.5v-5h-2v5" transform="translate(-1694.667 -857.5)" fill="none" stroke="#000" stroke-width="1"/>
+    </g>
+    <g id="Group_877" data-name="Group 877" transform="translate(1693.167 9.5)">
+      <g id="Group_873" data-name="Group 873">
+        <line id="Line_66" data-name="Line 66" x2="4" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_67" data-name="Line 67" x2="4" transform="translate(0 3.5)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_68" data-name="Line 68" x2="4" transform="translate(0 7)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_69" data-name="Line 69" x2="4" transform="translate(0 10.5)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+      <g id="Group_874" data-name="Group 874" transform="translate(6.35)">
+        <line id="Line_70" data-name="Line 70" x2="4" transform="translate(0.317)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_71" data-name="Line 71" x2="4" transform="translate(0 3.5)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_72" data-name="Line 72" x2="4" transform="translate(0.317 7)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_73" data-name="Line 73" x2="4" transform="translate(0 10.5)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+      <g id="Group_875" data-name="Group 875" transform="translate(13.333)">
+        <line id="Line_74" data-name="Line 74" x2="4" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_75" data-name="Line 75" x2="4" transform="translate(0 3.5)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_76" data-name="Line 76" x2="4" transform="translate(0 7)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_77" data-name="Line 77" x2="4" transform="translate(0 10.5)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+      <g id="Group_876" data-name="Group 876" transform="translate(20)">
+        <line id="Line_78" data-name="Line 78" x2="4" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_79" data-name="Line 79" x2="4" transform="translate(0 3.5)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_80" data-name="Line 80" x2="4" transform="translate(0 7)" fill="none" stroke="#000" stroke-width="1"/>
+        <line id="Line_81" data-name="Line 81" x2="4" transform="translate(0 10.5)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom - Residences</title>
+
+    <link rel="icon" href="./images/favicon.png">
+
+    <!--PREFETCH STARTS HERE-->
+    <link rel="dns-prefetch" crossorigin="anonymous" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <!--PREFETCH ENDS HERE -->
+
+    <!-- PRELOADS  -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@300;400;500;700&family=Noto+Serif+Display:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" />
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="preload" as="script" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js">
+    <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js">
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- PRELOADS  -->
+
+    <!--START FONTS STARTS HERE  -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@300;400;500;700&family=Noto+Serif+Display:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" />
+    <!--END FONTS ENDS HERE  -->
+
+
+    <!--START BOOTSTRAP CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--END BOOTSTRAP CSS  -->
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Link Swiper's CSS -->
+
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- MY STYLE -->
+
+</head>
+<body class="innerPage">
+
+
+    <!-- START OF HEADER  -->
+    <header class="col-11 col-lg-10 col-xxl-9 mx-auto fixed-top">
+        <div class="topHeader d-flex align-items-center justify-content-end px-3">
+            <div class="contact-header">
+                <ul class="d-flex list-unstyled">
+                  <li><a href="mailto:hello@theblossom.eu" target="_blank"><img src="./images/email.png" alt="">hello@theblossom.eu</a></li>
+                  <li><a href="tel:+306975400009" target="_blank"><img src="./images/telephone.svg" alt="">+306975400009</a></li>
+                </ul>
+            </div>
+            <div class="languagesDrop dropdown">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  EN
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">
+                  GR
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="bottomHeader bgGreenDE ps-2 ps-md-0">
+          <div class="row align-items-center">
+            <div class="col-5 col-xl-3 text-xl-end">
+              <div class="header-logo">
+                <a href="index.html">
+                  <img src="./images/logo-horizontal.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-2 col-xl-6 text-center">
+              <div class="header-nav d-none d-xl-block">
+                <ul class="position-relative list-unstyled menuNav d-flex align-items-center justify-content-center">
+                    <li class="parentItem">
+                        <label for="btn-1" class="d-none">Residences</label>
+                        <a href="#">Residences</a>
+                        <input type="checkbox" id="btn-1">
+                        <ul class="childMenu">
+                            <li>
+                                <a href="#">The Blossom Urban Residence, Heraklion</a>
+                            </li>
+                            <li>
+                                <a href="#">The Venice Harbor Residence I, Heraklion</a>
+                            </li>
+                            <li>
+                                <a href="#">The Venice Harbor Residence II, Heraklion</a>
+                            </li>
+                            <li>
+                                <a href="#">The Venice Harbor Residence III, Heraklion</a>
+                            </li>
+                            <li>
+                              <a href="#">The Jacuzzi Residence, Heraklion</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#">Experiences</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-5 col-xl-3 d-flex justify-content-end align-items-center">
+                <div class="menu-burger me-2 me-sm-4" id="menuOpen">
+                    <span></span>
+                </div>
+                <div class="headerBookBtn">
+                    <a href="#">BOOK NOW</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- END OF HEADER  -->
+  
+    <!-- START OF MOBILE MENU  -->
+    <div id="menu">
+      <div class="col-12 col-lg-9 mx-auto px-3 px-md-5 py-5 menuContent">
+        <div class="menu-header d-flex justify-content-between align-items-center">
+          <a href="index.html" class="menu-logo">
+            <img src="./images/logo-horizontal-white.png" alt="">
+          </a>
+          <div class="menu-burger" id="menuClose">
+            <span></span>
+          </div>
+        </div>
+        <nav role="navigation" class="mt-5 mb-4 mobile-nav">
+          <ul class="position-relative list-unstyled menuNav">
+              <li class="parentItem">
+                  <label for="btn-1" class="d-none">THE RESIDENCES</label>
+                  <a href="#">
+                    THE RESIDENCES
+                  </a>
+                  <input type="checkbox" id="btn-1">
+                  <ul class="childMenu">
+                      <li>
+                          <a href="#">The Blossom Urban Residence, Heraklion</a>
+                      </li>
+                      <li>
+                          <a href="#">The Venice Harbor Residence I, Heraklion</a>
+                      </li>
+                      <li>
+                          <a href="#">The Venice Harbor Residence II, Heraklion</a>
+                      </li>
+                      <li>
+                          <a href="#">The Venice Harbor Residence III, Heraklion</a>
+                      </li>
+                      <li>
+                        <a href="#">The Jacuzzi Residence, Heraklion</a>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="#">PHILOSOPHY</a></li>
+              <li><a href="#">EXPERIENCES</a></li>
+              <li><a href="#">EXCLUSIVE DEALS</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="menu-footer row align-items-center">
+          <div class="menu-social col-12 col-lg-4 text-lg-start mb-4 mb-lg-0">
+            <ul class="list-unstyled d-inline-flex flex-wrap">
+              <li><a href="#"><img src="./images/instagram-black.png" alt=""></a></li>
+              <li><a href="#"><img src="./images/tripadvisor-black.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="email col-12 col-lg-4 mb-4 mb-lg-0">
+            <a href="#">hello@theblossom.eu</a>
+          </div>
+          <div class="adress col-12 col-lg-4 text-lg-end">
+            <p>The Blossom Residences<br>25, Ariadnis st. 71202<br>Iraklio, Crete - Greece<br>T +306975400009</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF MOBILE MENU  -->
+
+    <div class="col-11 col-lg-10 col-xxl-9 mx-auto">
+        <div class="pageTitle bgGreenED">
+            <h1 class="text-center">
+                Heraklion
+            </h1>
+        </div>
+        <!-- Mporei na exei kai mia foto kai na min exei caption -->
+        <div id="bigCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active lazyload" style="background: url('./images/Blossom-residences-ioanni-jacuzzi-sea-view-0010.jpg') no-repeat center center/ cover;">
+                
+              </div>
+            </div>
+        </div>
+        <div class="paddingsX bgGreenF7 simpleBlockWithLeave">
+            <div class="simpleBlock">
+                <div class="col-10 col-sm-8 col-xl-6">
+                    <h2 class="headingBorder mb-5">
+                        Explore Heraklion and Crete!
+                    </h2>
+                    <p>Offering fascinating museums, imposing centuries-old monuments, varied restaurants, flourishing nightlife, and a pedestrianized shopping area, Heraklion is a vibrant, buzzing city that ticks all the boxes for a short-break or a long stay in Crete.</p>
+                </div>
+            </div>
+            <div class="col-12 col-xl-10 m-auto">
+                <ul class="list-unstyled menuAnckor d-flex flex-wrap">
+                    <li><a href="#sightseeing">Sightseeing</a></li>
+                    <li><a href="#eatAndDrink">Eat & Drink</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Crete’s highlights</a></li>
+                    <li><a href="#">Visitors info</a></li>
+                    <li><a href="#">Cultural Events</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="paddingsX bgGreenED mt-4" id="sightseeing">
+            <h2 class="h1 mb-5 ">
+                Sightseeing
+            </h2>
+            <p>Offering fascinating museums, imposing centuries-old monuments, varied restaurants, flourishing nightlife, and a pedestrianized shopping area, Heraklion is a vibrant, buzzing city that ticks all the boxes for a short-break or a long stay in Crete.</p>
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadni-25-1300-2.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Knossos Minoan Palace</h2>
+                        <p>The Minoan Palace of Knossos, probably the most important archaeological site in Crete, is located 5 km south of The Blossom Premium Living Residence. A palace complex with sophisticated multi-storey architecture, Knossos was the seat of almighty King Minos
+                        <span class="dots"></span>
+                        <span class="more">and the centre of the Minoan civilization that flourished on the island during the Bronze Age. The myths of the Labyrinth, Daedalus & Icarus, and the Minotaur were born here. We strongly suggest that you combine your visit to Knossos with a visit to the Archaeological Museum of Heraklion to get a complete picture of the Minoan civilization. Admission costs & opening hours: <a href="http://odysseus.culture.gr/h/3/eh355.jsp?obj_id=2369" target="_blank">http://odysseus.culture.gr/h/3/eh355.jsp?obj_id=2369</a> E-tickets: <a href="https://etickets.tap.gr/"  target="_blank">https://etickets.tap.gr/</a></span>
+                        </p>                        
+                        <button class="readBtn">+</button>
+
+                    </div>
+               </div>
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadnis-25-1359.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Archaeological Museum of Crete</h2>
+                        <p>Housed in an awarded Bauhaus building in the centre of the city, the Archaeological Museum of Heraklion is one of the most important museums in Europe. Its collections cover all the periods of Cretan prehistory and history, the Minoan collection
+                        <span class="dots"></span>
+                        <span class="more">being the most important of all. You’ll have the opportunity to admire the most famous and sophisticated artefacts of Minoan Art including the Phaistos Disk, the Snake Goddess figurines, the ring of King Minos, the world-famous bull-leaping frescoes from the Palace of Knossos, the gold “bee” jewellery from Malia, and the colorful Kamares pottery, jewellery, everyday objects, etc. We suggest buying a combined ticket for the museum and Knossos, offered at a special price. Official website https://heraklionmuseum.gr/ E-tickets: https://etickets.tap.gr/</span>
+                        </p>
+                        <button class="readBtn">+</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadnis-25-1367.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Historical Museum of Crete</h2>
+                        <p>The Historical Museum of Crete is housed in an imposing neoclassical building at Heraklion’s coastal avenue. Its permanent collections (ceramics, sculptures, numismatics, Byzantine art, Ottoman collection, World War II collection, and 
+                        <span class="dots"></span>
+                        <span class="more">ethnographic collection) cover the turbulent history of Crete, starting from early Christian times until the mid-20th century. But there is more than that. The Historical Museum of Crete also has the only two masterpieces – the View of Mount Sinai and the Monastery (1570) and the Baptism of Christ (1569) - on display in Crete by Domenicos Theotocopoulos, better known as El Greco, and a collection dedicated to another famous Cretan, Nikos Kazantzakis, the author of Zorbas. There are also fascinating periodical exhibitions and modern art exhibitions. Official website https://www.historical-museum.gr/</span>
+                        </p>
+                        <button class="readBtn">+</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadni-25-1300-2.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Knossos Minoan Palace</h2>
+                        <p>The Minoan Palace of Knossos, probably the most important archaeological site in Crete, is located 5 km south of The Blossom Premium Living Residence. A palace complex with sophisticated multi-storey architecture, Knossos was the seat of almighty King Minos
+                        <span class="dots"></span>
+                        <span class="more">and the centre of the Minoan civilization that flourished on the island during the Bronze Age. The myths of the Labyrinth, Daedalus & Icarus, and the Minotaur were born here. We strongly suggest that you combine your visit to Knossos with a visit to the Archaeological Museum of Heraklion to get a complete picture of the Minoan civilization. Admission costs & opening hours: <a href="http://odysseus.culture.gr/h/3/eh355.jsp?obj_id=2369" target="_blank">http://odysseus.culture.gr/h/3/eh355.jsp?obj_id=2369</a> E-tickets: <a href="https://etickets.tap.gr/"  target="_blank">https://etickets.tap.gr/</a></span>
+                        </p>                        
+                        <button class="readBtn">+</button>
+
+                    </div>
+               </div>
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadnis-25-1359.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Archaeological Museum of Crete</h2>
+                        <p>Housed in an awarded Bauhaus building in the centre of the city, the Archaeological Museum of Heraklion is one of the most important museums in Europe. Its collections cover all the periods of Cretan prehistory and history, the Minoan collection
+                        <span class="dots"></span>
+                        <span class="more">being the most important of all. You’ll have the opportunity to admire the most famous and sophisticated artefacts of Minoan Art including the Phaistos Disk, the Snake Goddess figurines, the ring of King Minos, the world-famous bull-leaping frescoes from the Palace of Knossos, the gold “bee” jewellery from Malia, and the colorful Kamares pottery, jewellery, everyday objects, etc. We suggest buying a combined ticket for the museum and Knossos, offered at a special price. Official website https://heraklionmuseum.gr/ E-tickets: https://etickets.tap.gr/</span>
+                        </p>
+                        <button class="readBtn">+</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadnis-25-1367.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Historical Museum of Crete</h2>
+                        <p>The Historical Museum of Crete is housed in an imposing neoclassical building at Heraklion’s coastal avenue. Its permanent collections (ceramics, sculptures, numismatics, Byzantine art, Ottoman collection, World War II collection, and 
+                        <span class="dots"></span>
+                        <span class="more">ethnographic collection) cover the turbulent history of Crete, starting from early Christian times until the mid-20th century. But there is more than that. The Historical Museum of Crete also has the only two masterpieces – the View of Mount Sinai and the Monastery (1570) and the Baptism of Christ (1569) - on display in Crete by Domenicos Theotocopoulos, better known as El Greco, and a collection dedicated to another famous Cretan, Nikos Kazantzakis, the author of Zorbas. There are also fascinating periodical exhibitions and modern art exhibitions. Official website https://www.historical-museum.gr/</span>
+                        </p>
+                        <button class="readBtn">+</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadni-25-1300-2.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Knossos Minoan Palace</h2>
+                        <p>The Minoan Palace of Knossos, probably the most important archaeological site in Crete, is located 5 km south of The Blossom Premium Living Residence. A palace complex with sophisticated multi-storey architecture, Knossos was the seat of almighty King Minos
+                        <span class="dots"></span>
+                        <span class="more">and the centre of the Minoan civilization that flourished on the island during the Bronze Age. The myths of the Labyrinth, Daedalus & Icarus, and the Minotaur were born here. We strongly suggest that you combine your visit to Knossos with a visit to the Archaeological Museum of Heraklion to get a complete picture of the Minoan civilization. Admission costs & opening hours: <a href="http://odysseus.culture.gr/h/3/eh355.jsp?obj_id=2369" target="_blank">http://odysseus.culture.gr/h/3/eh355.jsp?obj_id=2369</a> E-tickets: <a href="https://etickets.tap.gr/"  target="_blank">https://etickets.tap.gr/</a></span>
+                        </p>                        
+                        <button class="readBtn">+</button>
+
+                    </div>
+               </div>
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadnis-25-1359.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Archaeological Museum of Crete</h2>
+                        <p>Housed in an awarded Bauhaus building in the centre of the city, the Archaeological Museum of Heraklion is one of the most important museums in Europe. Its collections cover all the periods of Cretan prehistory and history, the Minoan collection
+                        <span class="dots"></span>
+                        <span class="more">being the most important of all. You’ll have the opportunity to admire the most famous and sophisticated artefacts of Minoan Art including the Phaistos Disk, the Snake Goddess figurines, the ring of King Minos, the world-famous bull-leaping frescoes from the Palace of Knossos, the gold “bee” jewellery from Malia, and the colorful Kamares pottery, jewellery, everyday objects, etc. We suggest buying a combined ticket for the museum and Knossos, offered at a special price. Official website https://heraklionmuseum.gr/ E-tickets: https://etickets.tap.gr/</span>
+                        </p>
+                        <button class="readBtn">+</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="service-item">
+                        <picture>
+                            <!-- <source srcset="#" type="image/webp" media="(min-width: 992px)">
+                            <source srcset="#" media="(min-width: 992px)"> -->
+                            <img src="./images/Blossom-Residence-Ariadnis-25-1367.jpg" alt="" class="img-fluid upImg">
+                        </picture>
+                        <h2 class="my-4">Historical Museum of Crete</h2>
+                        <p>The Historical Museum of Crete is housed in an imposing neoclassical building at Heraklion’s coastal avenue. Its permanent collections (ceramics, sculptures, numismatics, Byzantine art, Ottoman collection, World War II collection, and 
+                        <span class="dots"></span>
+                        <span class="more">ethnographic collection) cover the turbulent history of Crete, starting from early Christian times until the mid-20th century. But there is more than that. The Historical Museum of Crete also has the only two masterpieces – the View of Mount Sinai and the Monastery (1570) and the Baptism of Christ (1569) - on display in Crete by Domenicos Theotocopoulos, better known as El Greco, and a collection dedicated to another famous Cretan, Nikos Kazantzakis, the author of Zorbas. There are also fascinating periodical exhibitions and modern art exhibitions. Official website https://www.historical-museum.gr/</span>
+                        </p>
+                        <button class="readBtn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paddingsX bgGreenF7" id="eatAndDrink">
+            <div class="simpleBlock sipleBlockWithLeave">
+                <div class="col-8 col-sm-6">
+                    <h2 class="headingBorder mb-5 h1">
+                        Eat & Drink
+                    </h2>
+                    <p>From fancy restaurants to lively cafés, and from vibrant cocktail bars to traditional eateries, Heraklion offers a wide variety of food & drink experiences. Taste the delicacies of the world-famous Cretan cuisine, and mix with the locals at the most popular restaurants and cafés of the city.</p>
+                </div>
+            </div>
+            <div class="accordion mt-5" id="accordionEatDrink">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        Apiri_greek eatery
+                    </button>
+                  </div>
+                  <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionEatDrink">
+                    <div class="accordion-body">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Central Park All Day Café Restaurant
+                    </button>
+                  </div>
+                  <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionEatDrink">
+                    <div class="accordion-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Crop Roastery Brewery
+                    </button>
+                  </div>
+                  <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionEatDrink">
+                    <div class="accordion-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" id="heading4">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                        Dish Bar Party Restaurant
+                      </button>
+                    </div>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionEatDrink">
+                      <div class="accordion-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading5">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        Erganos
+                      </button>
+                    </div>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionEatDrink">
+                      <div class="accordion-body">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading6">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        Ferment Artisan Lab
+                      </button>
+                    </div>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionEatDrink">
+                      <div class="accordion-body">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading7">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                        Fix Café
+                      </button>
+                    </div>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionEatDrink">
+                      <div class="accordion-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading8">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        Café Hacienda
+                      </button>
+                    </div>
+                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionEatDrink">
+                      <div class="accordion-body">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading9">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        Ippokambos
+                      </button>
+                    </div>
+                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionEatDrink">
+                      <div class="accordion-body">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="heading10">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                        Kanatelias Lunch Restaurant
+                      </button>
+                    </div>
+                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionEatDrink">
+                      <div class="accordion-body">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odio quod optio! Quos veritatis dolorem error, quidem aut harum quisquam repellat, ex reprehenderit incidunt non! Nihil quod libero voluptate officia rem molestiae odit sed. Praesentium sapiente id iste eveniet porro voluptate cumque quae perferendis atque qui. Excepturi facere voluptate cum!
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="paddingsX bgGreenED" id="activities">
+            <h2 class="headingBorder h1 mb-5">
+                Activities
+            </h2>
+            <p>Make the best of your stay at The Blossom Premium Living Residence in Heraklion, trying recreational activities, exciting adventures in the great outdoors of Crete, wine-tasting trips, and other relaxing experiences.</p> 
+            <h2 class="my-5">Wine routes</h2>
+            <p>Crete has a long tradition in viticulture and wine-making, so how about some wine tourism? Visit contemporary wineries, enjoy wine-tasting, see the Cretan vineyards, and combine your trip with visits to places of cultural or historical interest. There are two wine routes to explore in the area of Heraklion: the eastern and the western route. The eastern route includes the Archanes vineyard and the Peza vineyard and offers several wineries to visit: Boutari winery, Minos Miliarakis winery, Lyrarakis winery, Domaine Paterianakis, Michalakis estate, and more. The western route passes from the PDO Dafnes region and continues to the eastern foothills of Psiloritis. The most important wineries of the area: Alexakis winery, Douloufakis winery, Diamantakis winery, Silva Daskalaki winery, Idaia winery. Before hitting the road, check their websites for visiting hours, bookings, etc.</p> 
+            <h2 class="my-5">Hiking: E4 trail & gorges</h2> 
+            <p>If you love hiking, then Crete is the right place for you. There are several trails across the island, the most important of all being E4. The European path E4 crosses the whole island from the West (Kissamos) to the East (Zakros), offering unique opportunities to see beautiful “hidden” landscapes and explore the authentic Crete. There are trails for everyone, from first-timers to experienced hikers. The island of Crete also boasts the largest number of gorges in Greece. Samaria gorge is the most famous of all, but there are also beautiful gorges in the area of Heraklion that are easy to cross (Agiofaraggo, Kounaviano, and more).</p>
+           
+        </div>
+        
+    </div>
+
+    
+  
+    <!--START BOOTSTRAP JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--END BOOTSTRAP JS  -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+
+    <!-- Lazyload JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Lazyload JS  -->
+
+    <!--START MY SCRIPTS  -->
+    <script src="./scripts/scripts.js"></script>
+    <!--END MY SCRIPTS  -->
+</body>
+</html>
