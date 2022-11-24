@@ -80,33 +80,32 @@ var swiper4 = new Swiper(".roomPhotosSwiper3", {
   },
 });
 
-var swiper5 = new Swiper(".whySwiper .swiper", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  speed: 600,
-  loop: true,
-  navigation: {
-    nextEl: ".whySwiper .swiper-button-next",
-    prevEl: ".whySwiper .swiper-button-prev",
-  },
-  breakpoints: {
-    700: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1199: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1399: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-});
+// var swiper5 = new Swiper(".whySwiper .swiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 0,
+//   speed: 600,
+//   loop: true,
+//   navigation: {
+//     nextEl: ".whySwiper .swiper-button-next",
+//     prevEl: ".whySwiper .swiper-button-prev",
+//   },
+//   breakpoints: {
+//     700: {
+//       slidesPerView: 2,
+//       spaceBetween: 20,
+//     },
+//     1199: {
+//       slidesPerView: 2,
+//       spaceBetween: 20,
+//     },
+//     1399: {
+//       slidesPerView: 3,
+//       spaceBetween: 20,
+//     },
+//   },
+// });
 
 var swiper6 = new Swiper(".experiencesSwiper .swiper", {
-  slidesPerView: 1,
   spaceBetween: 20,
   speed: 600,
   loop: true,
@@ -115,9 +114,16 @@ var swiper6 = new Swiper(".experiencesSwiper .swiper", {
     prevEl: ".experiencesSwiper .swiper-button-prev",
   },
   breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+    0: {
+      loop: false,
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      freeMode: true
+    },
+    650: {
+      slidesPerView: 2.2
     },
     992: {
       slidesPerView: 2,
@@ -140,9 +146,16 @@ var swiper7 = new Swiper(".testimonialsSwiper .swiper", {
     prevEl: ".testimonialsSwiper .swiper-button-prev",
   },
   breakpoints: {
-    600: {
-      slidesPerView: 2,
-      spaceBetween:10,
+    0: {
+      loop: false,
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      freeMode: true
+    },
+    650: {
+      slidesPerView: 2.2
     },
     992: {
       slidesPerView: 2,
@@ -169,12 +182,45 @@ var swiper8 = new Swiper(".roomsInnerSwiper .swiper", {
     prevEl: ".roomsInnerSwiper .swiper-button-prev",
   },
   breakpoints: {
-    768: {
+    0: {
+      loop: false,
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      freeMode: true
+    },
+    992: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
     1200: {
       slidesPerView: 2,
+      spaceBetween: 20,
+    }
+  },
+});
+
+
+var swiper9 = new Swiper(".instagramSwiper .swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  speed: 600,
+  loop: false,
+  breakpoints: {
+    0: {
+      loop: false,
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      freeMode: true
+    },
+    650: {
+      slidesPerView: 2.2
+    },
+    992: {
+      slidesPerView: 4,
       spaceBetween: 20,
     }
   },

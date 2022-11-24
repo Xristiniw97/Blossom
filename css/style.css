@@ -14,6 +14,7 @@ font-family: 'Playfair Display', serif;
     --black: #000;
     --black22: #222221;
     --black0a: #0a0a0a;
+    --grey4c: #4c4842;
     --greyAC: #ACACAC;
     --grey70: #707070;
     --grey4B: #4B4B49;
@@ -73,9 +74,9 @@ html,
 body,
 ul,
 ol {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -188,8 +189,8 @@ h1::after,
     position: absolute;
     bottom: 0;
     left: 5px;
-    height: 2.5px;
-    width: 100px;
+    height: 2px;
+    width: 150px;
     background: var(--black22);
 }
 
@@ -223,6 +224,13 @@ h2,
     height: 2.5px;
     width: 100px;
     background: var(--black22);
+}
+
+@media screen and (max-width: 991px) {
+    .pageTitle h1 {
+        padding-bottom: 0px;
+        padding: 20px 10px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -304,7 +312,7 @@ h2,
     }
 
     .paddingsX {
-        padding: 60px 25px 60px;
+        padding: 60px 35px 60px;
     }
 }
 
@@ -502,17 +510,18 @@ h2,
 }
 
 #bigCarousel,
-#bigCarousel .carousel-item {
+#bigCarousel .carousel-item,
+.carousel-photo {
     position: relative;
     height: 100vh;
 }
 
 .innerPage .carousel,
 .innerPage .carousel-item {
-    height: 600px !important;
+    height: 70vh !important;
 }
 
-#bigCarousel .carousel-item:before {
+.carousel-photo:before {
     content: "";
     height: 100%;
     width: 100%;
@@ -580,52 +589,92 @@ h2,
 @media screen and (max-width: 991px) {
 
     #bigCarousel .carousel-control-prev {
-        left: 8%;
+        left: 2%;
     }
 
     #bigCarousel .carousel-control-next {
-        right: 8%;
+        right: 2%;
+    }
+
+    #bigCarousel .carousel-control-next,
+    #bigCarousel .carousel-control-prev {
+        top: 42%;
+        transform: none;
+    }
+
+    /* .innerPage .carousel,
+    .innerPage .carousel-item {
+        height: 500px !important;
+    } */
+
+    .carousel-photo {
+        height: 82%;
+    }
+
+    .home-hero .headerBookBtn,
+    .inner-hero .headerBookBtn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    #bigCarousel .carousel-control-next-icon,
+    #bigCarousel .carousel-control-prev-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    #bigCarousel .carousel-caption {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    #bigCarousel .carousel-caption {
+        background-color: var(--grey4c);
+    }
+
+    #bigCarousel .carousel-caption {
+        top: unset;
+        bottom: 100px;
+        transform: translateX(-50%);
+    }
+
+    
+
+}
+
+@media screen and (max-width: 767px) {
+    #bigCarousel .carousel-caption {
+        top: unset;
+        bottom: 80px;
+    }
+
+    .carousel-photo {
+        height: 80%;
     }
 
     .innerPage .carousel,
     .innerPage .carousel-item {
-        height: 500px !important;
+        height: 75vh !important;
     }
+
 }
 
 @media screen and (max-width: 575px) {
 
     #bigCarousel .carousel-caption {
-        font-size: 30px;
-        line-height: 40px;
-        padding: 10px 50px;
+        font-size: 26px;
+        line-height: 36px;
+        padding: 10px 40px;
     }
 
-
-    #bigCarousel .carousel-control-prev {
-        left: 5%;
-    }
-
-    #bigCarousel .carousel-control-next {
-        right: 5%;
-    }
-
-    .innerPage .carousel,
-    .innerPage .carousel-item {
-        height: 350px !important;
-    }
 }
 
 /* END OF CAROUSEL  */
 
 /* START OF HEADER  */
-header {
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    transform: translatex(-50%);
-}
-
 .innerPage header {
     transform: none;
 }
@@ -671,15 +720,14 @@ header {
 
 .languagesDrop .dropdown-toggle::after {
     border: none !important;
-    background: url("../images/down-arrow-white.png");
+    background: url("../images/down-arrow-white.png") no-repeat center center;
     width: 22px;
     height: 20px;
-    vertical-align: -0.1em;
+    vertical-align: -0.25em;
     margin-left: 0;
 }
 
 .destinationPage .header-logo img {
-    /* width: 220px; */
     padding-left: 80px;
 }
 
@@ -689,6 +737,10 @@ header {
     cursor: pointer;
     background-color: var(--greenF7);
     transition: var(--transition3s);
+}
+
+.innerPage .inner-hero .headerBookBtn {
+    background-color: var(--greenED);
 }
 
 .headerBookBtn a {
@@ -1051,6 +1103,10 @@ header {
 }
 
 @media screen and (max-width: 991px) {
+    .topHeader {
+        margin-bottom: 0;
+    }
+
     .menuContent {
         height: auto;
     }
@@ -1059,6 +1115,21 @@ header {
         width: auto;
         padding-left: 20px;
     }
+
+    .contact-header ul li a {
+        font-size: 13px;
+    }
+
+    .languagesDrop .dropdown-toggle,
+    .languagesDrop .dropdown-item {
+        font-size: 14px;
+    }
+
+    .languagesDrop .dropdown-toggle::after {
+        vertical-align: -0.35em;
+        background-size: 18px;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1108,23 +1179,12 @@ header {
         top: 2px;
     }
 
-    .headerBookBtn a {
-        font-size: 14px;
-        line-height: 16.2px;
-    }
-
     .contact-header ul li {
         margin-right: 15px;
     }
 
     .contact-header ul li a {
         font-size: 0px;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .header-logo img {
-        width: 150px;
     }
 }
 
@@ -1193,14 +1253,14 @@ header {
 
     .homeWelcome {
         padding-right: 0px;
-        background-position: 50% 89%;
+        background-position: 50% 95%;
+        padding-bottom: 350px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .homeWelcome {
-        padding-bottom: calc(100% - 100px);
-        background-position: 50% 90%;
+        padding-bottom: calc(100% - 230px);
     }
 }
 
@@ -1289,6 +1349,11 @@ header {
 }
 
 @media screen and (max-width: 991px) {
+
+    .roomsHome {
+        margin-top: 0px;
+    }
+
     .roomsSwiper .swiper-slide {
         height: 500px !important;
     }
@@ -1300,6 +1365,27 @@ header {
     .thespaces .paddingsX:last-child {
         padding: 80px 60px 120px;
     }
+
+    .roomDetails {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-top: 1px solid;
+        padding-top: 23px;
+    }
+
+    .roomDetails li {
+        margin-right: 10px;
+    }
+
+    .roomDetails li:last-child {
+        margin-right: 0;
+    }
+
+    .roomsSwiper .swiper-button-prev,
+    .roomsSwiper .swiper-button-next {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -1310,7 +1396,7 @@ header {
     }
 
     .thespaces .paddingsX:last-child {
-        padding: 80px 25px 150px;
+        padding: 80px 35px 150px;
     }
 }
 
@@ -1326,7 +1412,7 @@ header {
     background-image: url("../images/leave2.svg");
     background-repeat: no-repeat;
     background-size: 160px;
-    background-position: 73% 18%;
+    background-position: 75% 14%;
     padding: 150px 0px 80px;
     padding-left: 120px;
     position: relative;
@@ -1339,11 +1425,11 @@ header {
     background-position: 85% 10%;
 }
 
-.whySwiper picture {
+.whyBox picture {
     height: 300px;
 }
 
-.whySwiper p {
+.whyBox p {
     border-bottom: 1px solid var(--grey70);
     padding-bottom: 20px;
 }
@@ -1371,66 +1457,67 @@ header {
     z-index: 1;
 }
 
-.whySwiper .swiper-button-prev {
-    left: -90px;
-}
-
-.whySwiper .swiper-button-next {
-    right: -90px;
-}
-
-
-.whySwiper .swiper-button-next,
-.whySwiper .swiper-button-prev {
-    top: 160px;
+.whyRow {
+    margin-top: 80px;
 }
 
 @media screen and (max-width: 1199px) {
 
-    .whySwiper .swiper-button-prev {
-        left: -60px;
-    }
-
-    .whySwiper .swiper-button-next {
-        right: -60px;
+    .homeWhy {
+        background-size: 130px;
     }
 
 }
 
 @media screen and (max-width: 991px) {
     .homeWhy {
-        background-size: 160px;
-        background-position: 82% 18%;
+        background-size: 130px;
+        background-position: 50% 22%;
         padding: 150px 0px 50px;
         padding-left: 0px;
     }
 
-    .whySwiper .swiper-button-prev {
-        left: -30px;
+    .innerWhy {
+        background-size: 130px;
+        background-position: 50% 18%;
     }
 
-    .whySwiper .swiper-button-next {
-        right: -30px;
+    .whyRow {
+        margin-top: 50%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .homeWhy {
+        background-position: 50% 21%;
+    }
+
+    
+    .innerWhy {
+        background-position: 50% 19%;
     }
 
 }
 
 @media screen and (max-width: 575px) {
-    .homeWhy {
-        background-position: 95% 18%;
+    .whyRow {
+        margin-top: 75%;
     }
 
     .homeWhy {
-        padding: 150px 0px 0px;
+        background-position: 50% 22%;
     }
 
-    .whySwiper .swiper-button-prev {
-        left: -15px;
+}
+
+
+@media screen and (max-width: 380px) {
+    .whyRow {
+        margin-top: 90%;
     }
 
-    .whySwiper .swiper-button-next {
-        right: -15px;
-    }
 }
 
 /* END OF WHY SECTION  */
@@ -1549,22 +1636,58 @@ header {
         padding: 85px 80px 160px;
     }
 
-    .experiencesSwiper .swiper-button-next {
-        right: -60px;
+}
+
+@media screen and (max-width: 991px) {
+    .experiences .paddings {
+        padding: 85px 0px 160px;
     }
 
+    .experienesResidencesPage.paddingsX {
+        padding: 80px 0px 120px 80px;
+    }
+
+    .experiences.paddingsX {
+        padding: 120px 0px 120px 80px;
+    }
+
+    .innerPage .testimonials.paddingsX {
+        padding: 80px 0px 80px 80px;
+    }
+
+    .innerPage .residencesWelcome.paddingsX {
+        padding: 80px 0px 80px 80px;
+    }
+
+    .exploreResidecesPage.paddingsX {
+        padding: 150px 80px 80px;
+    }
+
+    .experiences.experienesResidencesPage {
+        margin-top: 0px;
+    }
+
+    .experiencesSwiper .swiper-button-next,
     .experiencesSwiper .swiper-button-prev {
-        left: -60px;
+        display: none;
+    }
+
+    .roomDescription.paddingsX {
+        padding: 60px 60px 380px;
     }
 }
 
 @media screen and (max-width: 575px) {
     .experiences .paddings {
-        padding: 70px 25px 100px;
+        padding: 70px 0px 100px;
     }
 
     .experienesResidencesPage.paddingsX {
-        padding: 120px 25px 170px;
+        padding: 60px 0px 185px 35px;
+    }
+
+    .experiences.paddingsX {
+        padding: 120px 0px 60px 35px;
     }
 
     .experiencesSwiper .swiper-button-prev {
@@ -1573,6 +1696,22 @@ header {
 
     .experiencesSwiper .swiper-button-next {
         right: -15px;
+    }
+
+    .innerPage .testimonials.paddingsX {
+        padding: 60px 0px 60px 35px;
+    }
+
+    .exploreResidecesPage.paddingsX {
+        padding: 110px 35px 60px;
+    }
+
+    .innerPage .residencesWelcome.paddingsX {
+        padding: 60px 0px 60px 35px;
+    }
+
+    .roomDescription.paddingsX {
+        padding: 60px 35px 380px;
     }
 
 }
@@ -1624,16 +1763,23 @@ header {
     right: 15%;
 }
 
-
-@media screen and (max-width: 575px) {
-
+@media screen and (max-width: 991px) {
     .bgLeave {
         background-size: 140px !important;
         width: 140px !important;
-        bottom: -250px;
+        bottom: -230px;
         left: 50% !important;
         transform: translateX(-50%) !important;
     }
+
+    .experienesResidencesPage .bgLeave,
+    .experienesResidencePage .bgLeave {
+        top: -130px;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
 
     .residences .bgLeave {
         top: -160px;
@@ -1696,13 +1842,18 @@ header {
 
 @media screen and (max-width: 991px) {
     .testimonials .paddings {
-        padding: 200px 50px 50px 50px;
+        padding: 170px 0px 50px 50px;
+    }
+
+    .testimonialsSwiper .swiper-button-prev,
+    .testimonialsSwiper .swiper-button-next {
+        display: none;
     }
 }
 
 @media screen and (max-width: 575px) {
     .testimonials .paddings {
-        padding: 200px 30px 50px 30px;
+        padding: 170px 0px 50px 35px;
     }
 
     .testimonialsSwiper .swiper-button-prev {
@@ -1749,9 +1900,11 @@ header {
     .insta-box {
         padding: 12px;
     }
+}
 
-    .insta-box picture {
-        height: 200px;
+@media screen and (max-width: 991px) {
+    .instagram .paddings {
+        padding: 80px 0px 80px 60px !important;
     }
 }
 
@@ -1759,20 +1912,24 @@ header {
     .insta-box {
         padding: 15px;
     }
-
-    .insta-box picture {
-        height: 220px;
-    }
 }
 
 @media screen and (max-width: 575px) {
 
-    .insta-box picture {
-        height: 200px;
-    }
-
     .instaTitle span {
         font-size: 25px;
+    }
+
+    .instagram .paddings {
+        padding: 50px 0px 50px 35px !important;
+    }
+
+    .instaTitle {
+        font-size: 16px;
+    }
+
+    .instaTitle img {
+        width: 20px;
     }
 }
 
@@ -1781,19 +1938,12 @@ header {
     .instaTitle span {
         font-size: 22px;
     }
-
-    .insta-box picture {
-        height: 180px;
-    }
-
-    .insta-box {
-        padding: 10px;
-    }
 }
 
 /* END OF INSTAGRAM  */
 
 /* START OF FOOTER  */
+
 .reviews ul li {
     border-right: 1px solid var(--black);
     padding: 22px 5px;
@@ -1838,7 +1988,6 @@ header {
     font-size: 26px;
     line-height: 36px;
     color: var(--black22);
-    text-align: left;
     margin-top: 30px;
     margin-bottom: 36px;
 }
@@ -1976,6 +2125,37 @@ header {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .reviews ul li {
+        border: 0;
+        padding: 22px 10px;
+        margin-bottom: 40px;
+    }
+
+    .reviews ul li:nth-child(3),
+    .reviews ul li:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    .reviews ul li:nth-child(odd) {
+        border-right: 1px solid var(--black);
+    }
+
+    .reviews::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--black);
+        z-index: 1;
+    }
+
+
+}
+
 @media screen and (max-width: 767px) {
 
     .newsletterForm .singBtn {
@@ -1998,10 +2178,7 @@ header {
 }
 
 @media screen and (max-width: 575px) {
-    .reviews ul li {
-        border: 0;
-        padding: 22px 10px;
-    }
+
 
     .reviews ul li a img {
         height: 32px;
@@ -2141,10 +2318,44 @@ a.scrollup {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .experiencesForm {
+        margin-top: 50%;
+    }
+
+    .experiecesFormSection.simpleBlockWithLeave2 {
+        background-size: 135px;
+        background-position: 50% 29% !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .experiecesFormSection.simpleBlockWithLeave2 {
+        background-position: 50% 25% !important;
+        background-size: 120px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .experiencesForm {
+        margin-top: 70%;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .ambassadorsForm .form-control {
         font-size: 23px;
         line-height: 34px;
+    }
+
+    .experiecesFormSection.simpleBlockWithLeave2 {
+        background-position: 50% 28% !important;
+        background-size: 100px;
+    }
+
+    .experiencesForm {
+        margin-top: 80%;
     }
 }
 
@@ -2285,7 +2496,8 @@ a.scrollup {
 .service-item p a {
     text-decoration: underline;
     color: var(--black);
-    word-break: break-word;;
+    word-break: break-word;
+    ;
 }
 
 .service-item .more {
@@ -2412,11 +2624,19 @@ a.scrollup {
     .roomDescription.simpleBlockWithLeave {
         background-position: 95% 9%;
     }
+
+    .exploreWelcome.simpleBlockWithLeave {
+        background-position: 95% 12%;
+    }
 }
 
 @media screen and (max-width: 991px) {
     .stickyMenu.left {
         display: none !important;
+    }
+
+    .exploreWelcome .menuAnckor {
+        margin-top: 50%;
     }
 
     .menuAnckor li a {
@@ -2429,6 +2649,14 @@ a.scrollup {
 
     .menuAnckor li {
         margin: 5px;
+    }
+
+    .roomDescription.simpleBlockWithLeave {
+        background-position: 50% 95%;
+    }
+
+    .exploreWelcome.simpleBlockWithLeave {
+        background-position: 50% 40%;
     }
 
 }
@@ -2446,15 +2674,23 @@ a.scrollup {
     .residencesWelcome.simpleBlockWithLeave {
         background-position: 95% 15%;
     }
+
+    .menuAnckor {
+        margin-top: 70%;
+    }
+
+    .exploreWelcome.simpleBlockWithLeave {
+        background-position: 50% 44%;
+    }
 }
 
 @media screen and (max-width: 575px) {
     .menuAnckor li a {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 25px;
-        background-size: 120px;
-        width: 120px;
-        height: 140px;
+        background-size: 105px;
+        width: 105px;
+        height: 120px;
     }
 
     .menuAnckor li {
@@ -2466,9 +2702,17 @@ a.scrollup {
         background-position: 98% 20%;
     }
 
-    .residencesWelcome.simpleBlockWithLeave,
-    .roomDescription.simpleBlockWithLeave {
-        background-image: none;
+    .exploreWelcome.simpleBlockWithLeave {
+        background-position: 50% 48%;
+        background-size: 100px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+   
+    .menuAnckor {
+        margin-top: 80%;
     }
 
 }
@@ -2544,9 +2788,21 @@ a.scrollup {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .contactPage .bgLeave {
+        top: 29px;
+        background-size: 100px !important;
+        width: 100px !important;
+    }
+
+    .contactPage .simpleBlock {
+        padding-top: 180px;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .contactdetails.paddingsX {
-        padding: 70px 10px 125px;
+        padding: 70px 35px 125px;
     }
 
     .contactDetailsBox a {
@@ -2554,9 +2810,6 @@ a.scrollup {
         line-height: 30px;
     }
 
-    .contactPage .simpleBlock {
-        padding-top: 80px;
-    }
 }
 
 /* END OF CONTACT PAGE  */
@@ -2885,23 +3138,21 @@ a.scrollup {
         right: -60px;
     }
 
-    .residencesWelcome.simpleBlockWithLeave {
-        background-position: 90% 12%;
-    }
-
-    .bookingRoomForm .datepicker { 
+    .bookingRoomForm .datepicker {
         width: 75%;
         margin: auto;
+    }
+
+    .residencesWelcome.simpleBlockWithLeave {
+        background-position: 98% 10%;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .roomsInnerSwiper .swiper-button-prev {
-        left: -30px;
-    }
 
+    .roomsInnerSwiper .swiper-button-prev,
     .roomsInnerSwiper .swiper-button-next {
-        right: -30px;
+        display: none;
     }
 
     .bookingRoomForm .datepicker {
@@ -2913,13 +3164,37 @@ a.scrollup {
         font-size: 18px;
     }
 
+    .roomsInnerSwiper {
+        margin-top: 50%;
+    }
+
+    .residencesWelcome.simpleBlockWithLeave {
+        background-position: 50% 30%;
+    }
+
+    .innerPage .residences.paddingsX {
+        padding: 80px 0px 80px 80px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .residencesWelcome.simpleBlockWithLeave {
+        background-position: 50% 30%;
+        background-size: 120px;
+    }
 }
 
 
 @media screen and (max-width: 575px) {
 
     .roomsInnerSwiper .swiper-slide picture {
-        height: 400px;
+        height: 350px;
+    }
+
+    .roomsInnerSwiper {
+        margin-top: 70%;
     }
 
     .roomsInnerSwiper .swiper-button-prev,
@@ -2929,6 +3204,15 @@ a.scrollup {
 
     .roomText {
         padding: 38px 30px;
+    }
+
+    .residencesWelcome.simpleBlockWithLeave {
+        background-position: 50% 37%;
+        background-size: 100px;
+    }
+
+    .innerPage .residences.paddingsX {
+        padding: 60px 0px 60px 35px;
     }
 }
 
@@ -2946,6 +3230,10 @@ a.scrollup {
 
 .galleriesPage .paddingsX {
     padding: 50px 120px 50px;
+}
+
+.galleriesPage .headerBookBtn {
+    width: 100%;
 }
 
 #galleryBtnContainer label {
